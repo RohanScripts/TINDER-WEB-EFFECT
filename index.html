@@ -4,19 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/54d51c61e6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>TINDER WEB EFFECT</title>
+    <style>
+      .details-container {
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+      }
+    </style>
   </head>
   <body>
     <div class="w-full h-screen bg-black">
       <div class="relative image-container w-full h-screen">
-        <div class="absolute z-[3] w-full h-screen bg-orange-600"></div>
-        <div class="absolute z-[2] w-full h-screen bg-green-600"></div>
+        <div class="main-card absolute z-[3] w-full h-screen bg-orange-600">
+          <img
+            class="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1516522973472-f009f23bba59?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div
+          class="incoming-card absolute z-[2] w-full h-screen bg-green-600"
+        ></div>
       </div>
-      <div class="top-0 left-0 w-full h-screen absolute bg-purple-600 z-[4]">
-        <div class="navbar">
+      <div
+        class="top-0 left-0 w-full h-screen absolute z-[4] flex flex-col justify-between"
+      >
+        <div
+          class="navbar px-5 py-5 flex justify-between items-center text-white"
+        >
           <div
-            class="profile-image w-[60px] h-[60px] rounded-full bg-red-600"
-          ></div>
+            class="profile-image overflow-hidden w-[60px] h-[60px] rounded-full bg-red-600"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="https://plus.unsplash.com/premium_photo-1679619558108-32e12a8377b2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <h3 class="tracking-tighter text-2xl font-semibold">
+            They liked you
+          </h3>
+          <div
+            class="flex relative justify-center items-center chat-icon w-[60px] h-[60px] rounded-full bg-white/25"
+          >
+            <i class="fa-solid fa-comment text-4xl"></i>
+            <div class="badging font-bold text-black absolute">
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+        <div class="details-container w-full">
+          <div class="details px-5 py-5 w-full">
+            <div class="flex gap-[3vw]">
+              <i
+                class="flex justify-center items-center bg-white/40 w-[27px] h-[27px] rounded-full text-black fa-solid fa-arrows-turn-right fa-rotate-270"
+              ></i>
+              <h3 class="text-xl text-white">California, USA.</h3>
+            </div>
+            <div class="flex text-white mt-2 gap-[2vw]">
+              <h1 class="text-6xl">Julia</h1>
+              <h1 class="text-6xl opacity-60">20</h1>
+            </div>
+            <div class="tags flex mt-4 gap-3">
+              <div
+                class="tag bg-white/30 flex items-center rounded-full text-white gap-[2vw] px-3 py-1"
+              >
+                <i class="fa-solid fa-music"></i>
+                <h3>Music</h3>
+              </div>
+              <div
+                class="tag bg-white/30 flex items-center rounded-full text-white gap-[2vw] px-3 py-1"
+              >
+                <i class="fa-solid fa-music"></i>
+                <h3>Music</h3>
+              </div>
+              <div
+                class="tag bg-white/30 flex items-center rounded-full text-white gap-[2vw] px-3 py-1"
+              >
+                <i class="fa-solid fa-music"></i>
+                <h3>Music</h3>
+              </div>
+            </div>
+            <div class="bio text-white/80 mt-4">
+              <h3 class="text-xl">Bio</h3>
+              <p class="mt-1 text-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi, voluptatum?
+              </p>
+            </div>
+            <div class="buttons flex items-start gap-4 mt-4">
+              <button class="rounded-lg w-1/2 bg-white py-1">
+                <i class="text-2xl fa-solid fa-xmark"></i>
+              </button>
+              <button class="rounded-lg w-1/2 bg-[#FC5149] py-1">
+                <i class="text-2xl text-white fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
