@@ -52,3 +52,10 @@ var users = [
     isFriend: null,
   },
 ];
+
+var curr = 0;
+
+(function setInitial() {
+  document.querySelector(".main-card img").src = users[curr].displayPic;
+  document.querySelector(".incoming-card img").src = users[curr + 1].displayPic;
+})();
